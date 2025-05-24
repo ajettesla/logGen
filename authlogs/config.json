@@ -1,0 +1,20 @@
+{
+    "target_mb": 10,
+    "log_file": "fake_auth.log",
+    "users": ["gatewaya", "root", "nobody"],
+    "hosts": ["gatewaya"],
+    "ip_pools": {
+        "local": "192.168.0.0/16",
+        "external": "0.0.0.0/0"
+    },
+    "log_type_weights": {
+        "sudo_command": 10,
+        "pam_unix_session_open": 10,
+        "pam_unix_session_close": 10,
+        "ssh_success": 10,
+        "ssh_fail": 10,
+        "brute_force": 5,
+        "privilege_escalation": 5,
+        "insider_threat": 5
+    }
+}
